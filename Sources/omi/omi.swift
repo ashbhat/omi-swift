@@ -3,4 +3,5 @@
 
 public class OmiManager {
     public var foo = "bar"
+    public init() {}
 }
