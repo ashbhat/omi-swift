@@ -1,5 +1,5 @@
 ## Context
-This is a boiler plate project to make it easy to read data from an (Omi device)[https://docs.omi.me/assembly/Build_the_device/]. The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
+This is a boiler plate project to make it easy to read data from an [Omi device](https://docs.omi.me/assembly/Build_the_device/). The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
 
 ## Usage
 The RootVC shows off an example of how to use OmiManager to connect to the OmiDevice.
