@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A1C1BE42CA608EC00C91817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BE32CA608EC00C91817 /* AppDelegate.swift */; };
+		6A1C1BE62CA608EC00C91817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BE52CA608EC00C91817 /* SceneDelegate.swift */; };
+		6A1C1BE82CA608EC00C91817 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BE72CA608EC00C91817 /* Root.swift */; };
+		6A1C1BEB2CA608EC00C91817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1C1BE92CA608EC00C91817 /* Main.storyboard */; };
+		6A1C1BED2CA608ED00C91817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A1C1BEC2CA608ED00C91817 /* Assets.xcassets */; };
+		6A1C1BF02CA608ED00C91817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1C1BEE2CA608ED00C91817 /* LaunchScreen.storyboard */; };
+		6A1C1BF82CA6095F00C91817 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BF72CA6095F00C91817 /* Friend.swift */; };
+		6A1C1BFB2CA60A7500C91817 /* Opus in Frameworks */ = {isa = PBXBuildFile; productRef = 6A1C1BFA2CA60A7500C91817 /* Opus */; };
+		6A1C1BFE2CA60B0700C91817 /* PacketCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BFD2CA60B0700C91817 /* PacketCounter.swift */; };
+		6A1C1C002CA60B8200C91817 /* Codecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1BFF2CA60B8200C91817 /* Codecs.swift */; };
+		6A1C1C022CA60B9F00C91817 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C012CA60B9F00C91817 /* Recording.swift */; };
+		6A1C1C062CA60BCE00C91817 /* WearableDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C052CA60BCE00C91817 /* WearableDevice.swift */; };
+		6A1C1C0A2CA60C2500C91817 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C072CA60C2500C91817 /* BLEManager.swift */; };
+		6A1C1C0B2CA60C2500C91817 /* BLEAssignedNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C082CA60C2500C91817 /* BLEAssignedNumber.swift */; };
+		6A1C1C0C2CA60C2500C91817 /* BLEScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C092CA60C2500C91817 /* BLEScanner.swift */; };
+		6A1C1C0E2CA60C5A00C91817 /* WearableDeviceRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C0D2CA60C5A00C91817 /* WearableDeviceRegistry.swift */; };
+		6A1C1C102CA60CA100C91817 /* UserDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C0F2CA60CA100C91817 /* UserDevice.swift */; };
+		6A1C1C122CA6292000C91817 /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C1C112CA6292000C91817 /* FriendManager.swift */; };
+		6A1C1C152CA74B6A00C91817 /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 6A1C1C142CA74B6A00C91817 /* SwiftWhisper */; };
+		6A1C1C1A2CA74D5700C91817 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6A1C1C192CA74D5700C91817 /* AudioKit */; };
+		6A7198AE2CA9E077004A72FC /* ggml-tiny.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 6A7198AD2CA9E077004A72FC /* ggml-tiny.en.bin */; };
+		6A7D8C4D2CA8FC3600AC03F9 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D8C4C2CA8FC3600AC03F9 /* Defaults.swift */; };
+		6AD6ED7F2CA9E70000663A0A /* OmiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD6ED7E2CA9E70000663A0A /* OmiManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A1C1BE02CA608EC00C91817 /* omi-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "omi-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1C1BE32CA608EC00C91817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A1C1BE52CA608EC00C91817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A1C1BE72CA608EC00C91817 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		6A1C1BEA2CA608EC00C91817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A1C1BEC2CA608ED00C91817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A1C1BEF2CA608ED00C91817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A1C1BF12CA608ED00C91817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A1C1BF72CA6095F00C91817 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		6A1C1BFD2CA60B0700C91817 /* PacketCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketCounter.swift; sourceTree = "<group>"; };
+		6A1C1BFF2CA60B8200C91817 /* Codecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codecs.swift; sourceTree = "<group>"; };
+		6A1C1C012CA60B9F00C91817 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		6A1C1C052CA60BCE00C91817 /* WearableDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearableDevice.swift; sourceTree = "<group>"; };
+		6A1C1C072CA60C2500C91817 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		6A1C1C082CA60C2500C91817 /* BLEAssignedNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEAssignedNumber.swift; sourceTree = "<group>"; };
+		6A1C1C092CA60C2500C91817 /* BLEScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEScanner.swift; sourceTree = "<group>"; };
+		6A1C1C0D2CA60C5A00C91817 /* WearableDeviceRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WearableDeviceRegistry.swift; sourceTree = "<group>"; };
+		6A1C1C0F2CA60CA100C91817 /* UserDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDevice.swift; sourceTree = "<group>"; };
+		6A1C1C112CA6292000C91817 /* FriendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
+		6A7198AD2CA9E077004A72FC /* ggml-tiny.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-tiny.en.bin"; sourceTree = "<group>"; };
+		6A7D8C452CA8C16600AC03F9 /* omi-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "omi-swift.entitlements"; sourceTree = "<group>"; };
+		6A7D8C4C2CA8FC3600AC03F9 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		6AD6ED7E2CA9E70000663A0A /* OmiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmiManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A1C1BDD2CA608EC00C91817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1C1C1A2CA74D5700C91817 /* AudioKit in Frameworks */,
+				6A1C1BFB2CA60A7500C91817 /* Opus in Frameworks */,
+				6A1C1C152CA74B6A00C91817 /* SwiftWhisper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A1C1BD72CA608EC00C91817 = {
+			isa = PBXGroup;
+			children = (
+				6A1C1BE22CA608EC00C91817 /* omi-swift */,
+				6A1C1BE12CA608EC00C91817 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A1C1BE12CA608EC00C91817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A1C1BE02CA608EC00C91817 /* omi-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A1C1BE22CA608EC00C91817 /* omi-swift */ = {
+			isa = PBXGroup;
+			children = (
+				6A1C1BE32CA608EC00C91817 /* AppDelegate.swift */,
+				6A1C1BE52CA608EC00C91817 /* SceneDelegate.swift */,
+				6A1C1BE72CA608EC00C91817 /* Root.swift */,
+				6A7198AF2CA9E127004A72FC /* OmiManager */,
+				6AD6ED7D2CA9E4D600663A0A /* Helpers */,
+				6A1C1BF12CA608ED00C91817 /* Info.plist */,
+			);
+			path = "omi-swift";
+			sourceTree = "<group>";
+		};
+		6A1C1BFC2CA60AF800C91817 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A1C1C112CA6292000C91817 /* FriendManager.swift */,
+				6A1C1BF72CA6095F00C91817 /* Friend.swift */,
+				6A1C1BFF2CA60B8200C91817 /* Codecs.swift */,
+				6A1C1BFD2CA60B0700C91817 /* PacketCounter.swift */,
+				6A1C1C012CA60B9F00C91817 /* Recording.swift */,
+				6A1C1C052CA60BCE00C91817 /* WearableDevice.swift */,
+				6A1C1C082CA60C2500C91817 /* BLEAssignedNumber.swift */,
+				6A1C1C072CA60C2500C91817 /* BLEManager.swift */,
+				6A1C1C092CA60C2500C91817 /* BLEScanner.swift */,
+				6A1C1C0D2CA60C5A00C91817 /* WearableDeviceRegistry.swift */,
+				6A1C1C0F2CA60CA100C91817 /* UserDevice.swift */,
+				6A7198AD2CA9E077004A72FC /* ggml-tiny.en.bin */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6A7198AF2CA9E127004A72FC /* OmiManager */ = {
+			isa = PBXGroup;
+			children = (
+				6AD6ED7E2CA9E70000663A0A /* OmiManager.swift */,
+				6A1C1BFC2CA60AF800C91817 /* Helpers */,
+			);
+			path = OmiManager;
+			sourceTree = "<group>";
+		};
+		6AD6ED7D2CA9E4D600663A0A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D8C4C2CA8FC3600AC03F9 /* Defaults.swift */,
+				6A1C1BE92CA608EC00C91817 /* Main.storyboard */,
+				6A7D8C452CA8C16600AC03F9 /* omi-swift.entitlements */,
+				6A1C1BEC2CA608ED00C91817 /* Assets.xcassets */,
+				6A1C1BEE2CA608ED00C91817 /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A1C1BDF2CA608EC00C91817 /* omi-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A1C1BF42CA608ED00C91817 /* Build configuration list for PBXNativeTarget "omi-swift" */;
+			buildPhases = (
+				6A1C1BDC2CA608EC00C91817 /* Sources */,
+				6A1C1BDD2CA608EC00C91817 /* Frameworks */,
+				6A1C1BDE2CA608EC00C91817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "omi-swift";
+			packageProductDependencies = (
+				6A1C1BFA2CA60A7500C91817 /* Opus */,
+				6A1C1C142CA74B6A00C91817 /* SwiftWhisper */,
+				6A1C1C192CA74D5700C91817 /* AudioKit */,
+			);
+			productName = scribehardware;
+			productReference = 6A1C1BE02CA608EC00C91817 /* omi-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A1C1BD82CA608EC00C91817 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					6A1C1BDF2CA608EC00C91817 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 6A1C1BDB2CA608EC00C91817 /* Build configuration list for PBXProject "omi-swift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A1C1BD72CA608EC00C91817;
+			packageReferences = (
+				6A1C1BF92CA60A7500C91817 /* XCRemoteSwiftPackageReference "swift-opus" */,
+				6A1C1C132CA74B6A00C91817 /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				6A1C1C182CA74D5700C91817 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = 6A1C1BE12CA608EC00C91817 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A1C1BDF2CA608EC00C91817 /* omi-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A1C1BDE2CA608EC00C91817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7198AE2CA9E077004A72FC /* ggml-tiny.en.bin in Resources */,
+				6A1C1BF02CA608ED00C91817 /* LaunchScreen.storyboard in Resources */,
+				6A1C1BED2CA608ED00C91817 /* Assets.xcassets in Resources */,
+				6A1C1BEB2CA608EC00C91817 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A1C1BDC2CA608EC00C91817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A1C1C0C2CA60C2500C91817 /* BLEScanner.swift in Sources */,
+				6A1C1C0B2CA60C2500C91817 /* BLEAssignedNumber.swift in Sources */,
+				6A1C1BE82CA608EC00C91817 /* Root.swift in Sources */,
+				6A1C1BE42CA608EC00C91817 /* AppDelegate.swift in Sources */,
+				6A1C1C0E2CA60C5A00C91817 /* WearableDeviceRegistry.swift in Sources */,
+				6A1C1BE62CA608EC00C91817 /* SceneDelegate.swift in Sources */,
+				6A1C1BF82CA6095F00C91817 /* Friend.swift in Sources */,
+				6A7D8C4D2CA8FC3600AC03F9 /* Defaults.swift in Sources */,
+				6A1C1C002CA60B8200C91817 /* Codecs.swift in Sources */,
+				6A1C1C062CA60BCE00C91817 /* WearableDevice.swift in Sources */,
+				6A1C1C122CA6292000C91817 /* FriendManager.swift in Sources */,
+				6AD6ED7F2CA9E70000663A0A /* OmiManager.swift in Sources */,
+				6A1C1C102CA60CA100C91817 /* UserDevice.swift in Sources */,
+				6A1C1C0A2CA60C2500C91817 /* BLEManager.swift in Sources */,
+				6A1C1C022CA60B9F00C91817 /* Recording.swift in Sources */,
+				6A1C1BFE2CA60B0700C91817 /* PacketCounter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A1C1BE92CA608EC00C91817 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A1C1BEA2CA608EC00C91817 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A1C1BEE2CA608ED00C91817 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A1C1BEF2CA608ED00C91817 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A1C1BF22CA608ED00C91817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A1C1BF32CA608ED00C91817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A1C1BF52CA608ED00C91817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "omi-swift/Helpers/omi-swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HT9LCU3B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "omi-swift/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Echo;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need to use Bluetooth to connect to nearby devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "We need to use Bluetooth to connect to nearby devices.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need speech recognition to transcribe audio to text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhat.omi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A1C1BF62CA608ED00C91817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "omi-swift/Helpers/omi-swift.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HT9LCU3B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "omi-swift/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Echo;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need to use Bluetooth to connect to nearby devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "We need to use Bluetooth to connect to nearby devices.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need speech recognition to transcribe audio to text.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhat.omi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A1C1BDB2CA608EC00C91817 /* Build configuration list for PBXProject "omi-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1C1BF22CA608ED00C91817 /* Debug */,
+				6A1C1BF32CA608ED00C91817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A1C1BF42CA608ED00C91817 /* Build configuration list for PBXNativeTarget "omi-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1C1BF52CA608ED00C91817 /* Debug */,
+				6A1C1BF62CA608ED00C91817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A1C1BF92CA60A7500C91817 /* XCRemoteSwiftPackageReference "swift-opus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nelcea/swift-opus";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		6A1C1C132CA74B6A00C91817 /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				branch = fast;
+				kind = branch;
+			};
+		};
+		6A1C1C182CA74D5700C91817 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A1C1BFA2CA60A7500C91817 /* Opus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A1C1BF92CA60A7500C91817 /* XCRemoteSwiftPackageReference "swift-opus" */;
+			productName = Opus;
+		};
+		6A1C1C142CA74B6A00C91817 /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A1C1C132CA74B6A00C91817 /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		6A1C1C192CA74D5700C91817 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A1C1C182CA74D5700C91817 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6A1C1BD82CA608EC00C91817 /* Project object */;
+}
