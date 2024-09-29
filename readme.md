@@ -27,7 +27,7 @@ func lookForSpecificDevice(device_id) {
 }
 ```
 
-**Connecting / Recpmmect to a device**
+**Connecting / Reconnect to a device**
 ```swift
 func connectToOmiDevice(device: Friend) {
     OmiManager.connectToDevice(device: device)
