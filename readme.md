@@ -1,5 +1,9 @@
 ## Context
-This is a boiler plate project to make it easy to read data from an [Omi Friend device](https://docs.omi.me/assembly/Build_the_device/). The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
+This is a boiler plate iOS project that makes it easy to read data from an [Omi Friend device](https://docs.omi.me/assembly/Build_the_device/). 
+
+The Omi Friend Device is an open sourced hardware pendant with a microphone and bluetooth transmitter. This project provides you a simple interface to process the live transcript from coming from the audio this bluetooth device picks up.
+
+The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device. You can improve voice transcription by using a [larger client side whisper model](https://huggingface.co/ggerganov/whisper.cpp/tree/main) or processing the live audio data (provided in a .wav format) yourself.
 
 ## Usage
 The core interface for interacting with the Omi device is the **OmiManager.swift**. The OmiManager abstracts things like scanning, connecting, and reading bluetooth data into a few simple function calls.
