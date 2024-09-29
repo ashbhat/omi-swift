@@ -1,8 +1,10 @@
 ## Context
-This is a boiler plate project to make it easy to read data from an [Omi device](https://docs.omi.me/assembly/Build_the_device/). The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
+This is a boiler plate project to make it easy to read data from an [Omi Friend device](https://docs.omi.me/assembly/Build_the_device/). The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
 
 ## Usage
-The RootVC shows off an example of how to use OmiManager to connect to the OmiDevice.
+The core interface for interacting with the Omi device is the **OmiManager.swift**. The OmiManager abstracts things like scanning, connecting, and reading bluetooth data into a few simple function calls.
+
+The RootVC shows off an example of how to use OmiManager to connect to the Omi Friend Device.
 
 **Looking for a device**
 ```swift
@@ -17,7 +19,7 @@ func lookForDevice() {
     }
 }
 
-func lookForSpecificDevice(device_id) {
+func lookForSpecificDevice(device_id: String) {
     OmiManager.startScan { device, error in
         // connect to an omi device with a specific id
         if let device = device, device.id.uuidString == device_id {
@@ -45,7 +47,7 @@ func reconnectIfDisconnects() {
 
 **Getting Live Data**
 ```swift
-func getLiveTranscript() {
+func getLiveTranscript(device: Friend) {
     OmiManager.getLiveTranscription(device: device) { transcription in
 
         self.full_transcript = self.full_transcript + "\(self.getFormattedTimestamp(for: Date())): " + (transcription ?? "" ) + "\n\n"
@@ -62,7 +64,7 @@ func getLiveTranscript() {
     }
 }
 
-func getLiveAudioData() {
+func getLiveAudioData(device: Friend) {
     OmiManager.getLiveAudio(device: device) { file_url in
         print("file_url: ", file_url?.absoluteString ?? "no url")
     }
