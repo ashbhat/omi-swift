@@ -2,5 +2,5 @@
 // https://docs.swift.org/swift-book
 
 public class OmiManager {
-    var foo = "bar"
+    public var foo = "bar"
 }
