@@ -33,7 +33,7 @@ func lookForSpecificDevice(device_id: String) {
 }
 ```
 
-**Connecting / Reconnect to a device**
+**Connecting / Reconnecting to a device**
 ```swift
 func connectToOmiDevice(device: Friend) {
     OmiManager.connectToDevice(device: device)
@@ -51,7 +51,7 @@ func reconnectIfDisconnects() {
 
 **Getting Live Data**
 ```swift
-func getLiveTranscript(device: Friend) {
+func listenToLiveTranscript(device: Friend) {
     OmiManager.getLiveTranscription(device: device) { transcription in
 
         self.full_transcript = self.full_transcript + "\(self.getFormattedTimestamp(for: Date())): " + (transcription ?? "" ) + "\n\n"
@@ -68,7 +68,7 @@ func getLiveTranscript(device: Friend) {
     }
 }
 
-func getLiveAudioData(device: Friend) {
+func listenToLiveAudio(device: Friend) {
     OmiManager.getLiveAudio(device: device) { file_url in
         print("file_url: ", file_url?.absoluteString ?? "no url")
     }
