@@ -1,5 +1,5 @@
 ## Context
-This is a boiler plate project to make it easy to read data from the Omi and get start with hack projects.
+This is a boiler plate project to make it easy to read data from an (Omi device)[https://docs.omi.me/assembly/Build_the_device/]. The live transcription is powered by a tiny client side whisper model. All the code you see here runs on device.
 
 ## Usage
 The RootVC shows off an example of how to use OmiManager to connect to the OmiDevice.
@@ -69,4 +69,4 @@ func getLiveAudioData() {
 }
 ```
 ## Note
-The code within helpers is messy as was the output of a quick 8 hour hackathon. The goal of the OmiManager singleton is to provide a simple interface for hackers to build upon.
+The code that OmiManager abstracts is messy as it was the output of a quick 8 hour hackathon. The goal of the OmiManager singleton is to provide a simple interface for fellow hackers to build upon.
